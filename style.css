@@ -55,4 +55,8 @@ img{
     body{
         height:100vh;
     }
+    h1{
+        font-size:20px;
+        text-align:centre;
+    }
 }
