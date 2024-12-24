@@ -48,11 +48,19 @@ img{
 }
 
 @media (max-width:480px){
-    .box{
+     .box{
         height: 200px;
         width: 350px;
+        transition: all 4s ease;
+        transform: translateX(50px);
+        opacity: 0;
     }
-    body{
-        height: 100vh;
+    .box:nth-of-type(even){
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    .box.show{
+        transform: translateX(0);
+        opacity: 1;
     }
 }
